@@ -43,14 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Basis.cs" />
-    <Compile Include="CaloriesSort.cs" />
     <Compile Include="Components.cs" />
     <Compile Include="Extender.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vegetables.cs" />
-    <Compile Include="СhiefСooker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
