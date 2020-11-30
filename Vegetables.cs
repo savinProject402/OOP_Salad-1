@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Salad_1_
 {
-    public class Vegetables : Components_Abs
+    public class Vegetables : Components_Abs // овощи
     {
             public Vegetables(double weight, string name, string type, int calories, double prise, string stuffing) 
             : base (weight, name, type, calories, prise)
