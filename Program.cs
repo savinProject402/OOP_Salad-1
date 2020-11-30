@@ -10,9 +10,19 @@ namespace OOP_Salad_1_
     {
         static void Main(string[] args)
         {
-            // нужен метод на фулл каллории
-            // нужен метод рецепт
-            // нужен метод последовательность
+            СhiefСooker cc = new СhiefСooker();
+            cc.AddVegetablesToSalad(1);
+            Console.WriteLine("-------------------");
+            cc.AddExtenderToSalad(1);
+            Console.WriteLine("-------------------");
+            cc.AddBasisToSalad(1);
+            Console.WriteLine("-------------------");
+            cc.GetWeightOfSalad();
+            Console.WriteLine("-------------------");
+            cc.PrintAllComponent();
+            Console.WriteLine("--------------------");
+            cc.SortCaloriesOfSalad();
+            Console.ReadLine();
         }
     }
 }
