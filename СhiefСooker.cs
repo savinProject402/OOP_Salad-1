@@ -24,9 +24,9 @@ namespace OOP_Salad_1_
             Vegetables vege;
             for (int i = 0; i < VegetableСounter; i++)
             {
-                var randomcount1 = rand1.Next(1, 3);
-                var randomcount2 = rand2.Next(70, 250);
-                var randomcount3 = rand3.Next(100, 350);
+                var randomcount1 = rand1.Next(0, 0);
+                var randomcount2 = rand2.Next(25, 100);
+                var randomcount3 = rand3.Next(35, 100);
                 var randomcount4 = rand3.Next(4, 10);
                 vege = new Vegetables($"Vege:{randomcount4}", randomcount2, randomcount1, randomcount3, randomcount1, "Stuffing with something");
                 Array.Resize<Components_Abs>(ref comp, comp.Length + 1);
@@ -54,7 +54,7 @@ namespace OOP_Salad_1_
             for (int i = 0; i < BasisCounter; i++)
             {
                 var randomcount1 = rand1.Next(1, 3);
-                var randomcount2 = rand2.Next(70, 250);
+                var randomcount2 = rand2.Next(100, 150);
                 var randomcount3 = rand3.Next(100, 350);
                 var randomcount4 = rand3.Next(4, 10);
                 bas = new Basis($"Basis:{randomcount1}", randomcount2, randomcount1, randomcount3, randomcount1,"");
