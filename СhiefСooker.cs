@@ -17,14 +17,18 @@ namespace OOP_Salad_1_
             rand1 = new Random();
             rand2 = new Random();
             rand3 = new Random();
+
         }
         public void AddVegetablesToSalad(int VegetableСounter)
         {
             Vegetables vege;
             for (int i = 0; i < VegetableСounter; i++)
             {
-                var randParametr1 = rand1.Next(1, 100);
-                vege = new Vegetables($"Vege:{randParametr1}", randParametr1, "some type", randParametr1, randParametr1, "Stuffing with something");
+                var randomcount1 = rand1.Next(1, 3);
+                var randomcount2 = rand2.Next(70, 250);
+                var randomcount3 = rand3.Next(100, 350);
+                var randomcount4 = rand3.Next(4, 10);
+                vege = new Vegetables($"Vege:{randomcount4}", randomcount2, randomcount1, randomcount3, randomcount1, "Stuffing with something");
                 Array.Resize<Components_Abs>(ref comp, comp.Length + 1);
                 comp[comp.Length - 1] = vege;
             }
@@ -35,8 +39,11 @@ namespace OOP_Salad_1_
             Extender exten;
             for (int i = 0; i < ExtenderCounter; i++)
             {
-                var randParametr2 = rand2.Next(1, 4);
-                exten = new Extender($"Extend:{randParametr2}", randParametr2, "some type", randParametr2, randParametr2, "filling with something");
+                var randomcount1 = rand1.Next(1, 3);
+                var randomcount2 = rand2.Next(70, 250);
+                var randomcount3 = rand3.Next(100, 350);
+                var randomcount4 = rand3.Next(4, 10);
+                exten = new Extender($"Extend:{randomcount1}", randomcount2, randomcount1, randomcount3, randomcount1, "");
                 Array.Resize<Components_Abs>(ref comp, comp.Length + 1);
                 comp[comp.Length - 1] = exten;
             }
@@ -46,9 +53,11 @@ namespace OOP_Salad_1_
             Basis bas;
             for (int i = 0; i < BasisCounter; i++)
             {
-                var randParametr3 = rand3.Next(1, 100);
-                var randParametr4 = rand3.Next(1, 4);
-                bas = new Basis($"Basis:{randParametr4}", randParametr4, "some basis", randParametr3, randParametr3, "bases with something");
+                var randomcount1 = rand1.Next(1, 3);
+                var randomcount2 = rand2.Next(70, 250);
+                var randomcount3 = rand3.Next(100, 350);
+                var randomcount4 = rand3.Next(4, 10);
+                bas = new Basis($"Basis:{randomcount1}", randomcount2, randomcount1, randomcount3, randomcount1,"");
                 Array.Resize<Components_Abs>(ref comp, comp.Length + 1);
                 comp[comp.Length - 1] = bas;
             }

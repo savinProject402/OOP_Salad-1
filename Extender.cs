@@ -8,7 +8,7 @@ namespace OOP_Salad_1_
 {
         public class Extender : Components_Abs // майонез/масло
         {
-            public Extender(string name, double weight,  string type, int calories, double prise, string filling)
+            public Extender(string name, double weight,  int type, int calories, double prise, string filling)
             : base(weight, name, type, calories, prise)
             {
                 Filling = filling;

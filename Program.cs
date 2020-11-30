@@ -11,10 +11,8 @@ namespace OOP_Salad_1_
         static void Main(string[] args)
         {
             СhiefСooker cc = new СhiefСooker();
-            cc.AddVegetablesToSalad(1);
-            Console.WriteLine("-------------------");
+            cc.AddVegetablesToSalad(3);
             cc.AddExtenderToSalad(1);
-            Console.WriteLine("-------------------");
             cc.AddBasisToSalad(1);
             Console.WriteLine("-------------------");
             cc.GetWeightOfSalad();

@@ -8,7 +8,7 @@ namespace OOP_Salad_1_
 {
     public class Vegetables : Components_Abs // овощи
     {
-            public Vegetables(string name, double weight,  string type, int calories, double prise, string stuffing) 
+            public Vegetables(string name, double weight,  int type, int calories, double prise, string stuffing) 
             : base (weight, name, type, calories, prise)
         {
             Stuffing = stuffing;
