@@ -24,11 +24,12 @@ namespace OOP_Salad_1_
             Vegetables vege;
             for (int i = 0; i < VegetableСounter; i++)
             {
-                var randomcount1 = rand1.Next(0, 0);
-                var randomcount2 = rand2.Next(25, 100);
-                var randomcount3 = rand3.Next(35, 100);
-                var randomcount4 = rand3.Next(4, 10);
-                vege = new Vegetables($"Vege:{randomcount4}", randomcount2, randomcount1, randomcount3, randomcount1, "Stuffing with something");
+                var count1 = 0; // в данном случае тип не нужно выводить, по этому ноль
+                var randomcount2 = rand2.Next(25, 100); // вес
+                var randomcount3 = rand3.Next(35, 100); // +- каллории для овощей
+                var randomcount4 = rand3.Next(1,100); // какой то овощ из 100 возможных предположим из какой то таблицы
+                // можно еще добавить рандом для цены
+                vege = new Vegetables($"Vege:{randomcount4}", randomcount2, count1, randomcount3, count1, "");
                 Array.Resize<Components_Abs>(ref comp, comp.Length + 1);
                 comp[comp.Length - 1] = vege;
             }
